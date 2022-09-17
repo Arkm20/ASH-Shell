@@ -1,0 +1,24 @@
+#! /bin/bash
+
+directory=$(pwd)
+in=0
+
+until [ $in -gt 1 ]
+do
+	read -p "ash ~ ${PWD}% " input
+	
+	case $input in
+		
+		exit)
+			exit
+			;;
+
+		dir)
+			echo "$(pwd)"
+			;;
+		*)
+			$input
+	esac
+done
+exit
+
