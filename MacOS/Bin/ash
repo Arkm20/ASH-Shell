@@ -1,7 +1,12 @@
 #! /bin/bash
 
-directory=$(pwd)
 in=0
+
+echo ''
+echo 'This is a program not asscoiated with any companies'
+echo 'This was simply just a hobby project'
+echo 'Uses simply os commands'
+echo ''
 
 until [ $in -gt 1 ]
 do
